@@ -73,3 +73,23 @@ table {
 #animatedTable {
     animation: myAnimation 10s infinite;
 }
+
+#banner {
+    width: 100px;
+    position: relative;
+    background-color: blue;
+    color: white;
+    animation-name: moveBanner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveBanner {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: calc(100% - 100px); 
+    }
+}
