@@ -1,0 +1,75 @@
+body {
+  background-color: yellow;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: white;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+p::first-letter {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.red {
+  color: red;
+}
+
+h2 {
+  text-align: right;
+}
+
+.blue {
+  color: blue;
+}
+
+.fontSize48px {
+  font-size: 48px;
+}
+
+h3 {
+  text-align: right;
+}
+
+td {
+  padding: 10px;
+  margin: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+#homepageLink {
+  float: right;
+  color: black;
+}
+
+table {
+  background-color: cyan;
+}
+
+@keyframes myAnimation {
+  from {
+    background-color: cyan;
+    color: black;
+  }
+  to {
+    background-color: green;
+    color: white;
+  }
+}
+
+#animatedTable {
+    animation: myAnimation 10s infinite;
+}
