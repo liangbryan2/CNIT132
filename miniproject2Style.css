@@ -51,7 +51,7 @@ td {
 }
 
 #homepageLink {
-  float: right;
+  float: left;
   color: black;
 }
 
@@ -71,25 +71,30 @@ table {
 }
 
 #animatedTable {
-    animation: myAnimation 10s infinite;
+  animation: myAnimation 10s forwards;
 }
 
 #banner {
-    width: 100px;
-    position: relative;
-    background-color: blue;
-    color: white;
-    animation-name: moveBanner;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  width: 100px;
+  position: relative;
+  background-color: blue;
+  color: white;
+  animation-name: moveBanner;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes moveBanner {
-    0% {
-        left: 0px;
-    }
-    100% {
-        left: calc(100% - 100px); 
-    }
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: calc(100% - 100px);
+  }
+}
+
+.blueEm {
+  font-style: italic;
+  color: blue;
 }
