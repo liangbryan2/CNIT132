@@ -1,0 +1,147 @@
+body {
+  background-color: #669db3ff;
+}
+
+a[href*="http"] {
+  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png")
+    no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+.main {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  grid-template-rows: [header] 100px [body] auto;
+  grid-template-columns: [left-gutter] 1fr [menu] 1fr [content] 11fr [right-gutter] 1fr;
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+
+.header {
+  grid-row: header;
+  grid-column: menu / right-gutter;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f0f6f7ff;
+}
+
+::selection {
+  background: #ff4f58ff;
+}
+
+.menu {
+  grid-row: body;
+  grid-column: menu;
+  font-family: monospace;
+}
+
+.content {
+  grid-row: body;
+  grid-column: content;
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  float: right;
+  padding-bottom: 2.5rem;
+}
+
+.contact {
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+.footer {
+  text-align: center;
+  font-family: monospace;
+  background-color: #a89c94ff;
+  position: absolute;
+  padding-top: 15px;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+#photo {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+#me {
+  width: 200px;
+}
+
+#intro {
+  margin-top: 0;
+}
+
+.menu a {
+  background-color: #669db3ff;
+  box-shadow: 0 5px 0 #a89c94ff;
+  color: #f0f6f7ff;
+  padding: 1em 1.5em;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #ff4f58ff;
+  cursor: pointer;
+}
+
+.menu a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #669db3ff;
+  border: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #a89c94ff;
+  color: #f0f6f7ff;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff4f58ff;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}

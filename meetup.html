@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MeetUp</title>
-    <meta name="description" content="MeetUp page for CCSF CNIT132">
-</head>
-<body>
-    <p>This will be a report on my MeetUp experience.</p>
-    <a href="index.html">Back to the main page.</a>
-</body>
+    <meta name="description" content="MeetUp page for CCSF CNIT132" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1>Bryan Liang - CNIT 132</h1>
+      </div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="assignments.html">Assignments</a>
+        <a href="meetup.html">MeetUp</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="content">
+        <div class="contact">
+          <div id="paragraph">
+            <h1>Contact</h1>
+            <p>
+              If you would like to contact me, my email address is in the
+              footer. Alternatively, you can fill out this form.
+            </p>
+          </div>
+          <form
+            action="mailto:bliang68@mail.ccsf.edu?subject=Email%20from%20final%20project%20page"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="name">Full name:</label>
+            <input type="text" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" name="email" required />
+            <label for="comments">Comments:</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <span>Bryan Liang</span>
+        <span>
+          <a href="mailto:bliang68@mail.ccsf.edu">Send me an email!</a>
+        </span>
+      </div>
+    </div>
+  </body>
 </html>
