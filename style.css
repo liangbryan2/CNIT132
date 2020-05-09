@@ -168,7 +168,6 @@ input[type="submit"]:focus {
 
 .container {
   position: relative;
-  width: 100%;
   background-color: #ff4f58ff;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -178,6 +177,8 @@ input[type="submit"]:focus {
   opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  width: 60%;
+  height: auto;
 }
 
 .middle {
@@ -202,4 +203,24 @@ input[type="submit"]:focus {
 .text {
   color: #f0f6f7ff;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    grid-template-rows: [header] 100px [menu] 200px [content] auto;
+  }
+
+  .menu {
+    grid-row: menu;
+    grid-column: menu / right-gutter;
+  }
+
+  .content {
+    grid-row: content;
+    grid-column: left-gutter / 5;
+  }
+
+  .image {
+    width: 100%;
+  }
 }
