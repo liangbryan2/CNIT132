@@ -7,6 +7,12 @@ a[href*="http"] {
     no-repeat 100% 0;
   background-size: 16px 16px;
   padding-right: 19px;
+  text-decoration: none;
+  color: #f0f6f7ff;
+}
+
+a[href*="http"]:visited {
+  color: #f0f6f7ff;
 }
 
 .main {
@@ -144,4 +150,56 @@ input[type="submit"]:hover {
 
 input[type="submit"]:focus {
   outline: none;
+}
+
+.meetup {
+  text-align: center;
+}
+
+.references {
+  background-color: #ff4f58ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.assignments {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #ff4f58ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: #f0f6f7ff;
+  font-size: 2rem;
 }
